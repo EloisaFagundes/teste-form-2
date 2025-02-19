@@ -1,43 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>Formulário Exemplo</title>
     <style>
-        h1 {
-            text-align: center;
+        /* Estilo simples para o formulário */
+        form {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 300px;
+        }
+
+        label {
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        input[type="email"],
+        input[type="text"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
 
 <body>
-    <form class="form">
-        <div class="form-group">
-            <label>E-mail</label>
-            <input id="email" name="email" class="form-control" />
-        </div>
-        <div class="form-group">
-            <label>Nome</label>
-            <input id="name" name="name" class="form-control" />
-        </div>
-        <div class="form-group">
-            <label>Idade</label>
-            <input id="cf_idade" name="cf_idade" class="form-control" />
-        </div>
 
-        <div class="form-group">
-            <label>Campo Extra</label>
-            <input id="campo_extra" name="campo_extra" class="form-control" />
-        </div>
-        <button class="btn btn-primary" type="submit">Enviar</button>
+    <h2>Formulário de Contato</h2>
+
+    <!-- Formulário -->
+    <form id="bananinha">
+        <label for="name">Seu Nome:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="mensagem">Seu Primeiro Nome:</label>
+        <input type="text" id="mensagem" name="mensagem" required>
+
+        <label for="email">Seu E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="cargo">Seu Cargo:</label>
+        <input type="job_title" id="job_title" name="job_title" required>
+
+        <input type="submit" value="Enviar">
     </form>
-    </div>
+
+    <!-- Código de monitoramento, pode ser usado para rastrear visitantes ou interações -->
+
     <script type="text/javascript" async
-        src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/df79f89f-1a2c-4f8e-ba2d-a9a7ef9c1e3a-loader.js"></script>
+        src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/df79f89f-1a2c-4f8e-ba2d-a9a7ef9c1e3a-loader.js">console.log('Código de monitoramento carregado');</script>
+
+
 </body>
 
 </html>
