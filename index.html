@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário Exemplo</title>
-<style>
-        /* Estilo simples para o formulário */
+    <style>
         form {
             margin-top: 20px;
             padding: 20px;
@@ -45,7 +45,6 @@
 
     <h2>Formulário de Contato</h2>
 
-    <!-- Formulário -->
     <form id="bananinha">
         <label for="name">Seu Nome:</label>
         <input type="text" id="name" name="name" required>
@@ -56,14 +55,17 @@
         <label for="email">Seu E-mail:</label>
         <input type="email" id="email" name="email" required>
 
-        <label for="cargo">Seu Cargo:</label>
-        <input type="job_title" id="job_title" name="job_title" required>
+        <label for="job_title">Seu Cargo:</label>
+        <input type="text" id="job_title" name="job_title" required>
 
         <input type="submit" value="Enviar">
     </form>
 
-    <!-- Código de monitoramento -->
-    <script type="text/javascript" async src="https://d2umgtt5tsqx05.cloudfront.net/js/loader-scripts/a29b13f8-98f9-4d1f-9044-128e3f89572c-loader.js" ></script>
+    <script>
+        navigator.serviceWorker.register('/webpush-sdk.js');
+    </script>
+
+    <script async src="https://d2umgtt5tsqx05.cloudfront.net/js/loader-scripts/a29b13f8-98f9-4d1f-9044-128e3f89572c-loader.js"></script>
 
 </body>
 
